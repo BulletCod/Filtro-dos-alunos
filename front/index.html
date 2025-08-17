@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> /* tirei o lang="en" */
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Alunos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Busca de Alunos</h1>
+    
+    <!-- Campo de busca -->
+    <input type="text" id="searchInput" placeholder="Informe o nome, média ou faltas">
+    
+    <!-- Botões do filtro -->
+    <div>
+      <button onclick="buscarPorNome()">Buscar por Nome</button>
+      <button onclick="buscarPorMedia()">Buscar por Média</button>
+      <button onclick="buscarPorFaltas()">Buscar por Faltas</button>
+    </div>
+    
+    <!-- Resultados -->
+    <div id="resultados"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
